@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-02 21:37:51.971028",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "visitor",
+  "visit_date",
+  "visit_time",
+  "number_of_tickets",
+  "ticket_type",
+  "total_amount",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "visitor",
+   "fieldtype": "Link",
+   "label": "Visitor",
+   "options": "Visitor"
+  },
+  {
+   "fieldname": "visit_date",
+   "fieldtype": "Date",
+   "label": "Visit Date"
+  },
+  {
+   "fieldname": "visit_time",
+   "fieldtype": "Select",
+   "label": "Visit Time",
+   "options": "10:00 AM\n12:00 PM\n2:00 PM\n4:00 PM\n6:00 PM"
+  },
+  {
+   "fieldname": "number_of_tickets",
+   "fieldtype": "Int",
+   "label": "Number Of Tickets"
+  },
+  {
+   "fieldname": "ticket_type",
+   "fieldtype": "Link",
+   "label": "Ticket Type",
+   "options": "Ticket Type"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nConfirmed\nCancelled"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-02 21:42:29.447766",
+ "modified_by": "Administrator",
+ "module": "Cairo Tower Reservation",
+ "name": "Reservation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
