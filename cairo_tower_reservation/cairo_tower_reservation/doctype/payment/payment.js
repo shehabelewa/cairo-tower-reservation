@@ -1,8 +1,22 @@
-// Copyright (c) 2026, shehab and contributors
-// For license information, please see license.txt
+frappe.ui.form.on("Payment", {
+    reservation(frm) {
 
-// frappe.ui.form.on("Payment", {
-// 	refresh(frm) {
+        if (frm.doc.reservation) {
 
-// 	},
-// });
+            frappe.db.get_value(
+                "Reservation",
+                frm.doc.reservation,
+                "total_amount"
+            ).then(r => {
+
+                frm.set_value(
+                    "amount",
+                    r.message.total_amount
+                );
+
+            });
+
+        }
+
+    }
+});

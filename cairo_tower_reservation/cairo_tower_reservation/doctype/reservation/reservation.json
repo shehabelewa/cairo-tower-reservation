@@ -11,7 +11,8 @@
   "number_of_tickets",
   "ticket_type",
   "total_amount",
-  "status"
+  "status",
+  "qr_code"
  ],
  "fields": [
   {
@@ -52,12 +53,17 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Pending\nConfirmed\nCancelled"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Attach Image",
+   "label": "QR Code"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-02 21:42:29.447766",
+ "modified": "2026-06-14 09:04:46.664311",
  "modified_by": "Administrator",
  "module": "Cairo Tower Reservation",
  "name": "Reservation",
