@@ -46,7 +46,8 @@
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
-   "label": "Total Amount"
+   "label": "Total Amount",
+   "read_only": 1
   },
   {
    "fieldname": "status",
@@ -63,7 +64,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-14 09:04:46.664311",
+ "modified": "2026-06-14 23:23:57.870061",
  "modified_by": "Administrator",
  "module": "Cairo Tower Reservation",
  "name": "Reservation",
